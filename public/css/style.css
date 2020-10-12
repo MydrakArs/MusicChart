@@ -1,0 +1,256 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+    background: transparent;
+  }
+}
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+.content {
+  position: relative;
+  height: 100vh;
+}
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+h2 {
+  margin-top: 30px;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #24CBE2;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.content {
+  background-color: #24232D;
+  width: 500px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+.center {
+  margin-left: 100px;
+  margin-top: 160px;
+  font-weight: regular;
+}
+.center .reg {
+  font-size: 24px;
+}
+.center .auth {
+  font-size: 12px;
+  margin-left: 20px;
+  color: #24CBE2;
+  margin-bottom: 3px;
+}
+.body-form {
+  margin-top: 30px;
+}
+.body-form input[type="text"],
+.body-form input[type="password"] {
+  width: 300px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.body-form input[type="submit"] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  width: 245px;
+  height: 62px;
+  background-color: #24CBE2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.body-form .serch-margin {
+  margin-top: 30px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.body-form .serch-margin input[type="checkbox"] {
+  display: none;
+}
+.body-form .serch-margin label {
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 0 25px;
+}
+.body-form .serch-margin label::before,
+.body-form .serch-margin label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffffff;
+  width: 12px;
+  height: 12px;
+}
+.body-form .serch-margin label::after {
+  display: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  border-top-style: none;
+  border-right-style: none;
+}
+.body-form input[type="checkbox"]:checked ~ label::after {
+  display: block;
+  width: 11px;
+  height: 6px;
+  margin-left: 1px;
+  -webkit-transform: rotate(-48deg);
+          transform: rotate(-48deg);
+  border-color: #ffffff;
+}
+.body-form input[type="checkbox"]:checked ~ label::before {
+  background-color: #24CBE2;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  border: 1px solid #24CBE2;
+}
+.body-form input[type="text"]:focus ~ .label-box1 label,
+.body-form input[type="text"]:valid ~ .label-box1 label,
+.body-form input[type="text"]:focus ~ .label-box2 label,
+.body-form input[type="text"]:valid ~ .label-box2 label,
+.body-form input[type="password"]:focus ~ .label-box2 label,
+.body-form input[type="password"]:valid ~ .label-box2 label {
+  font-size: 10px;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  color: #24CBE2;
+}
+.body-form input[type="text"]:focus ~ .label-box1::before,
+.body-form input[type="text"]:focus ~ .label-box1::after,
+.body-form input[type="text"]:focus ~ .label-box2::before,
+.body-form input[type="text"]:focus ~ .label-box2::after,
+.body-form input[type="password"]:focus ~ .label-box2::before,
+.body-form input[type="password"]:focus ~ .label-box2::after {
+  width: 100%;
+  background-color: #24CBE2;
+}
+.body-form input[type="submit"]:active {
+  opacity: 0.8;
+}
+.body-form .not-necessery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.body-form .not-necessery p {
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.body-form .label-box1 {
+  position: relative;
+  width: 300px;
+}
+.body-form .label-box1:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  background-color: #24CBE2;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.body-form .label-box1:after {
+  left: 0;
+}
+.body-form .label-box1 label {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  pointer-events: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.body-form .label-box2 {
+  position: relative;
+  width: 300px;
+}
+.body-form .label-box2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  background-color: #24CBE2;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.body-form .label-box2:after {
+  left: 0;
+}
+.body-form .label-box2 label {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  pointer-events: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.body-form .submit {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.body-form .ulogin {
+  margin-left: 45px;
+  margin-top: 30px;
+}
